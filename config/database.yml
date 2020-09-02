@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: catsapi_development
+  database: test
   host: localhost
   port: 5432
   user: test
@@ -60,7 +60,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: catsapi_test
+  database: test
   port: 5432
   user: test
   password: test
